@@ -6,7 +6,7 @@ class SlackTransport extends Transport {
     super(opts);
 
     this.webhook = new IncomingWebhook(opts.webhookUrl);
-    this.author_name = otps.author_name || "slack webhook";
+    this.author_name = opts.author_name || "slack webhook";
 
     this.formatter = opts.formatter || this._formater;
     this.fieldPicker = opts.fieldPicker || (info => []);
