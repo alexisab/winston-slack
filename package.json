@@ -1,0 +1,32 @@
+{
+  "name": "@alexisab/winston-slack",
+  "version": "0.1.0",
+  "description": "Slack transport for winston v3",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexisab/winston-slack.git"
+  },
+  "author": "Alexis Ablain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexisab/winston-slack/issues"
+  },
+  "homepage": "https://github.com/alexisab/winston-slack#readme",
+  "dependencies": {
+    "@slack/client": "^4.8.0",
+    "winston-transport": "^4.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3"
+  },
+  "engines": {
+    "node": ">= 6.4.0"
+  }
+}
