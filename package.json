@@ -1,6 +1,6 @@
 {
   "name": "@alexisab/winston-slack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Slack transport for winston v3",
   "main": "lib/index.js",
   "scripts": {
