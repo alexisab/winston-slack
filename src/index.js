@@ -12,11 +12,6 @@ class SlackTransport extends Transport {
     this.fieldPicker = opts.fieldPicker || (info => []);
     this.titlePicker = opts.titlePicker || (info => info.level);
     this.textPicker = opts.textPicker || (info => info.message);
-
-    this.log = this.log.bind(this);
-    this._formatter = this._formatter.bind(this);
-    this._getLevelText = this._getLevelText.bind(this);
-    this._getLevelColor = this._getLevelColor.bind(this);
   }
 
   log(info, callback = () => {}) {
