@@ -30,7 +30,7 @@ class SlackTransport extends Transport {
             crit: 'Une erreur critique est survenue',
             error: 'Une erreur est survenue',
             warning: "Quelque chose d'anormal s'est produit",
-            notice: "Quelque méritant votre attention s'est produit",
+            notice: "Quelque chose méritant votre attention s'est produit",
             info: 'Info !',
             debug: 'Debug !',
         }
